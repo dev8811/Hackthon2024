@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "853050614273",
+    "project_id": "hackthon24-e0393",
+    "storage_bucket": "hackthon24-e0393.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853050614273:android:a9f2f070b8bcf342755600",
+        "android_client_info": {
+          "package_name": "com.example.hackthon24"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtHaRNk6SvbGRW6Wudv_Xl2RfVIYC27Cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

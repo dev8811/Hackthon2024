@@ -1,0 +1,58 @@
+[
+  {
+    "state": "GOA",
+    "beaches": [
+      {
+        "name": "Baga Beach",
+        "description": "Popular beach with vibrant nightlife",
+        "image": "baga_beach.jpg"
+      },
+      {
+        "name": "Anjuna Beach",
+        "description": "Known for its lively parties and markets",
+        "image": "anjuna_beach.jpg"
+      },
+      {
+        "name": "Calangute Beach",
+        "description": "One of the busiest beaches in Goa",
+        "image": "calangute_beach.jpg"
+      },
+      {
+        "name": "Palolem Beach",
+        "description": "A serene and scenic beach",
+        "image": "palolem_beach.jpg"
+      },
+      {
+        "name": "Vagator Beach",
+        "description": "Famous for its scenic beauty and parties",
+        "image": "vagator_beach.jpg"
+      }
+    ]
+  },
+  {
+    "state": "GUJARAT",
+    "beaches": [
+      {
+        "name": "Gir Somnath Beach",
+        "description": "Popular for its scenic beauty and Gir National Park",
+        "image": "gir_somnath_beach.jpg"
+      },
+      {
+        "name": "Diu Beach",
+        "description": "Known for its serene environment and historic fort",
+        "image": "diu_beach.jpg"
+      },
+      {
+        "name": "Mandvi Beach",
+        "description": "A tranquil beach with less crowd",
+        "image": "mandvi_beach.jpg"
+      },
+      {
+        "name": "Kutch Beach",
+        "description": "Offers unique salt desert and coastal views",
+        "image": "kutch_beach.jpg"
+      }
+    ]
+  }
+
+]
