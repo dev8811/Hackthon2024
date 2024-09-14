@@ -6,7 +6,7 @@ sealed class ParentItem {
 }
 
 sealed class ChildItem {
-    data class ChildTypeA(val name: String, val age: String) : ChildItem()
-    data class ChildTypeB(val title: String, val description: String) : ChildItem()
+    data class ChildTypeA(val name: String, val age: String,val imgUrl:String) : ChildItem()
+    data class ChildTypeB(val title: String, val description: String,val imgUrl:String) : ChildItem()
     // Add more child types as needed
 }

@@ -6,21 +6,20 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hackthon24.databinding.ItemParentABinding
 
-class ParentAdapter(private val parentList: List<ParentItem>) :
-    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class ParentAdapter(
+    private val parentList: List<ParentItem>,
+    private val childItemClickListener: ChildAdapter.OnItemClickListener
+) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    // Define view types
     companion object {
         private const val TYPE_A = 1
         private const val TYPE_B = 2
-
     }
 
     override fun getItemViewType(position: Int): Int {
         return when (parentList[position]) {
             is ParentItem.ParentTypeA -> TYPE_A
             is ParentItem.ParentTypeB -> TYPE_B
-
         }
     }
 
@@ -42,20 +41,19 @@ class ParentAdapter(private val parentList: List<ParentItem>) :
 
     override fun getItemCount(): Int = parentList.size
 
-    // ViewHolders for each parent type
     inner class ParentAViewHolder(private val binding: ItemParentABinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(parent: ParentItem.ParentTypeA) {
             binding.tvParentTitle.text = parent.title
-            binding.childRecyclerView.adapter = ChildAdapter(parent.children)
             binding.childRecyclerView.layoutManager = LinearLayoutManager(binding.root.context, LinearLayoutManager.HORIZONTAL, false)
+            binding.childRecyclerView.adapter = ChildAdapter(parent.children, childItemClickListener)
         }
     }
 
     inner class ParentBViewHolder(private val binding: ItemParentABinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(parent: ParentItem.ParentTypeB) {
             binding.tvParentTitle.text = parent.title
-            binding.childRecyclerView.adapter = ChildAdapter(parent.children)
             binding.childRecyclerView.layoutManager = LinearLayoutManager(binding.root.context, LinearLayoutManager.HORIZONTAL, false)
+            binding.childRecyclerView.adapter = ChildAdapter(parent.children, childItemClickListener)
         }
     }
 }

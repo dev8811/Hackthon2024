@@ -7,31 +7,31 @@
     android:background="@color/white"
     android:padding="10dp">
 
-    <TextView
-        android:id="@+id/title3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_gravity="center"
-        android:text="SkyNest"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-    <!-- Title for RecyclerView 1 -->
+
+    <!-- Title TextView inside a CardView -->
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="SkyNest"
+           android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
 
 
-    <!-- First RecyclerView -->
+    <!-- Greeting TextView with HI and EXPLORER -->
+
+
+    <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:background="@color/white" />
-
-    <!-- Title for RecyclerView 2 -->
-
-
-    <!-- Second RecyclerView -->
-
+        android:background="@color/white"
+        android:layout_marginBottom="24dp" />
 
 </LinearLayout>

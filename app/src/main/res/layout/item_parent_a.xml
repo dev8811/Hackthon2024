@@ -11,22 +11,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
+
         android:orientation="vertical"
         android:padding="0dp">
 
         <!-- Title for the parent item -->
-        <TextView
-            android:id="@+id/tvParentTitle"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardParentTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-           android:layout_gravity="center"
-            android:textAlignment="center"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:background="@color/ocen"
-            android:textStyle="bold"
-            tools:text="Parent Title" />
+            android:layout_margin="8dp"
+            android:elevation="4dp"
+            android:backgroundTint="@color/ocen"
+            app:cardCornerRadius="16dp">
+
+            <TextView
+                android:id="@+id/tvParentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:text="Parent Title"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:background="@color/ocen"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
 
         <!-- RecyclerView for the child items -->
         <androidx.recyclerview.widget.RecyclerView
